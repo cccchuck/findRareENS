@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 const { ethers } = require("ethers");
-require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+// require("dotenv").config({ path: path.resolve(__dirname, "../.env") });
+require("dotenv").config();
 
 // 创建 Provider
 const provider = new ethers.providers.JsonRpcProvider(process.env.Provider);
